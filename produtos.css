@@ -1,0 +1,170 @@
+body{
+    background-color:  #f0e5e5;
+   
+}
+    h1{
+    color: #f3faf6;
+}
+   .quadrado{
+    background-color: rgb(171,212,212);
+    height: auto;
+    text-align: center;
+    padding: 1em;
+}
+   .button-container button{
+    background-color: rgb(211,240,240);
+    border: none; /*tirar bordas dos botões*/;
+    padding: 0.5em 1em; 
+    margin: 0.5em;
+    cursor: pointer;
+   
+}
+   .button-container button,
+   .button-categoria button {
+    background-color: rgb(211, 240, 240);
+    border: none; 
+    padding: 0.5em 1em; 
+    margin: 0.5em;
+    cursor: pointer;
+    font-size: 16px; /* Aumenta tamanho dos botões */
+    border-radius: 5px; 
+}
+
+    .button-categoria {
+    text-align: center;
+    border: none; 
+    padding: 0.5em 1em; 
+    margin: 0.5em;
+    cursor: pointer; 
+      
+}
+
+    img{
+    width: 300px; 
+    height: auto; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+ }
+
+    .catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+ }
+    .item{
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    width: calc(33% - 4em);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+ }
+
+    #formularioPersonalizacao {
+    display: none; 
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    padding: 20px;
+    background-color:  #f0e5e5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #formularioPersonalizacao input, 
+    #formularioPersonalizacao textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+    #formularioPersonalizacao button {
+    padding: 10px 20px;
+    background-color: rgb(171,212,212);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+        
+    #formularioPersonalizacao button.close {
+    background-color:  rgb(171,212,212);
+}
+
+    #informacoesSalvas {
+    text-align: center;
+    border: 2px solid #ccc; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background-color: #f0e5e5; 
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+    #informacoesSalvas h2 {
+    margin-bottom: 20px;
+}
+
+    #listaPersonalizacoes {
+    list-style-type: none;
+    padding: 0;
+}
+
+    #listaPersonalizacoes li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+    #listaPersonalizacoes .nome {
+    font-weight: bold;
+}
+
+    #listaPersonalizacoes .descricao {
+    margin: 5px 0;
+    font-weight: bold;
+}
+    #listaPersonalizacoes .telefone {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#listaPersonalizacoes .botoes {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #listaPersonalizacoes .botoes button {
+        padding: 8px 15px;
+        margin: 0 5px;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        background-color:rgb(171,212,212);
+        border: none;
+        cursor: pointer;
+    }
+
+    #listaPersonalizacoes .botoes .btn-editar {
+        background-color: rgb(171,212,212); 
+    }
+
+    #listaPersonalizacoes .botoes .btn-editar:hover {
+        background-color:rgb(171,212,212) ; 
+    }
+
+    #listaPersonalizacoes .botoes .btn-excluir {
+        background-color: rgb(171,212,212);
+    }
+
+    #listaPersonalizacoes .botoes .btn-excluir:hover {
+        background-color: #e53935; 
+    }
+
+   
