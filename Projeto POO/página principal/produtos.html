@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" type="text/css" href="produtos.css"/>
+</head>
+<body>
+
+    <div class="quadrado">
+        <h1>Confira nossos produtos disponíveis!</h1>
+        <div class="button-container">
+            <button onclick="Layout()">Página Principal</button>
+            <button onclick="Contato()">Contato</button>
+        </div>
+    </div>
+
+    <!-- Botões de categoria -->
+    <div class="button-categoria">
+        <button onclick="mostrarCategoria('todos')">Todos</button>
+        <button onclick="mostrarCategoria('bolsas')">Bolsas</button>
+        <button onclick="mostrarCategoria('tapetes')">Tapetes</button>
+        <button onclick="mostrarCategoria('mesa')">Jogos de Mesa</button>
+        <button onclick="abrirFormulario()">Personalizar</button>
+    </div>
+
+    <!-- Catálogo dos Produtos -->
+    <div class="catalogo" id="catalogo">
+        <!-- Produto 1 -->
+        <div class="item bolsas">
+            <h2>Ecobag</h2>
+            <img src="../produtos/bolsa.jpeg" 
+                 alt="Bolsa Ecobag" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="item mesa">
+            <h2>Sousplat de girassol</h2>
+            <img src="../produtos/sousplat girassol.jpeg" 
+                 alt="Sousplat Girassol" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="item mesa">
+            <h2>Sousplat rose</h2>
+            <img src="../produtos/sousplat rosa.jpeg" 
+                 alt="Sousplat Rose" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="item mesa">
+            <h2>Sousplat verde</h2>
+            <img src="../produtos/sousplat verde.jpeg" 
+                 alt="Sousplat Verde" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="item mesa">
+            <h2>Sousplat branco</h2>
+            <img src="../produtos/sousplat branco.jpeg" 
+                 alt="Sousplat Branco" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="item mesa">
+            <h2>Sousplat azul</h2>
+            <img src="../produtos/sousplat azul.jpeg" 
+                 alt="Sousplat Azul" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+  
+        <!-- Produto 7 -->
+        <div class="item tapetes">
+            <h2>Tapete Minnie Mouse (redondo)</h2>
+            <img src="../produtos/tapete miney redondo.jpeg" 
+                 alt="Tapete Minnie Mouse (redondo)" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="item tapetes">
+            <h2>Tapete Minnie Mouse (quadrado)</h2>
+            <img src="../produtos/tapete miney quadrado.jpeg" 
+                 alt="Tapete Minnie Mouse (quadrado)" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+         </div>
+
+        <!-- Produto 9 -->
+        <div class="item tapetes">
+            <h2>Tapete Azul</h2>
+            <img src="../produtos/jogo de banheiro azul.jpeg" 
+                 alt="Tapete Azul" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+         </div>
+
+        <!-- Produto 10 -->
+        <div class="item tapetes">
+            <h2>Tapete Amarelo</h2>
+            <img src="../produtos/tapete amarelo.jpeg" 
+                 alt="Tapete Amarelo" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+
+        <!-- Produto 11 -->
+        <div class="item tapetes">
+            <h2>Tapete Vinho</h2>
+            <img src="../produtos/tapete vinho.jpeg" 
+                 alt="Tapete Vinho" class="img">
+            <div class="button-container">
+                <button onclick="Compre()">Compre Aqui</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aparece informações da peça personalizada -->
+    <div id="informacoesSalvas">
+        <h2>Suas Personalizações</h2>
+        <ul id="listaPersonalizacoes"></ul>
+    </div>
+
+    <!-- Formulário para Personalização -->
+    <div id="formularioPersonalizacao">
+        <h2>Personalize sua peça</h2>
+        <form id="formPersonalizacao" onsubmit="enviarParaWhatsApp(event)">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="descricao">Descrição da peça:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <button type="submit">Enviar</button>
+            <button type="button" class="close" onclick="fecharFormulario()">Fechar</button>
+        </form>
+    </div>
+
+    <script src="produtos.js"></script>
+</body>
+</html>

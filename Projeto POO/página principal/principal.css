@@ -1,0 +1,25 @@
+div{
+    background-color:rgb(201, 238, 253);
+    width: px;
+    height: 100px;
+ }
+
+ button{
+     background-color: rgb(211, 240, 240);
+     text-align:center;
+ }
+img{width: px;
+height: 200px;}
+
+.container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(201, 238, 253);
+     width: 600px; /* Adjust width as needed */
+     height: 600px; /* Adjust height as needed */
+     margin: auto;
+     padding: 20px;
+     box-sizing: border-box;
+ }

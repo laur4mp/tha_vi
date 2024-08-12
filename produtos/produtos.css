@@ -1,0 +1,52 @@
+body{
+    background-color:  #f0e5e5;
+   
+}
+h1{
+    color: #f3faf6;
+}
+.quadrado{
+    background-color: rgb(171,212,212);
+    height: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.button-container button{
+    background-color: rgb(211,240,240);
+    border: none; /*tirar bordas dos botões*/;
+    padding: 0.5em 1em; 
+    margin: 0.5em;
+    cursor: pointer;
+   
+}
+.button-categoria {
+    text-align: center;
+    border: none; /*tirar bordas dos botões*/;
+    padding: 0.5em 1em; 
+    margin: 0.5em;
+    cursor: pointer;   
+}
+ img{
+    width: 300px; 
+    height: auto; 
+    border: 2px solid #ccc; /* Adiciona uma borda cinza */
+    border-radius: 10px; /*borda arredondada */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2); /*sombra */
+ }
+
+ .catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+ }
+ .item{
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    width: calc(33% - 4em);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+ }
