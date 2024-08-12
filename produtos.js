@@ -1,5 +1,5 @@
 function Layout(){
-    window.location.href = 'Layout pág.html'; //função para o botão de página principal
+    window.location.href = 'index.html'; //função para o botão de página principal
 }
 
 function Contato(){
